@@ -62,7 +62,10 @@ export default function ContactsPage({ contactsRef }) {
     setPersData('false');
   };
   return (
-    <div ref={contactsRef}>
+    <section
+      ref={contactsRef}
+      className="min-h-screen"
+    >
       <span className="ancor" id="contacts"></span>
       <div className="mx-auto max-w-7xl items-center justify-between px-5 py-14 md:py-28">
         <h1 className=" text-orange-550 ">Интересное начинается здесь!</h1>
@@ -110,6 +113,6 @@ export default function ContactsPage({ contactsRef }) {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
