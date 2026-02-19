@@ -1,10 +1,10 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 //import { sendContactForm } from './Lib/api';
 import ButtonUniversal from './Components/ButtonUniversal';
-//import Image from 'next/image';
-//import UndrConstruction from '../public/images/contacts.png';
+import contactsImage from '../public/images/contacts.png';
 export default function ContactsPage({ contactsRef }) {
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
@@ -71,7 +71,7 @@ export default function ContactsPage({ contactsRef }) {
         <h1 className=" text-orange-550 ">Интересное начинается здесь!</h1>
         <div className="columns-1  gap-8  md:flex md:columns-2 ">
           <div className="mb-5 mt-5 self-center">
-            <img src="/images/contacts.png" alt="Contact Us" />
+            <Image src={contactsImage} alt="Contact Us" />
           </div>
           <div className=" space-y-5">
             <p className="text-gray-950">

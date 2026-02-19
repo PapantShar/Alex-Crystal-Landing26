@@ -1,13 +1,13 @@
-//import Image from 'next/image';
+import Image from 'next/image';
 
 export default function FeedbackItem({ feedback }) {
   return (
     <div className="relative ">
       <div className="card w-11/12  border border-orange-550  p-5">
-        <img
+        <Image
           src={feedback.image}
-          width="60"
-          height="60"
+          width={60}
+          height={60}
           alt={feedback.name}
           className="absolute top-10 z-10"
         />

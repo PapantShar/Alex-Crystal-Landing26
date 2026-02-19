@@ -1,3 +1,17 @@
+import shakeImage from '../public/images/Shake.png';
+import christImage from '../public/images/Christ.png';
+import bulgakovImage from '../public/images/bulgakov.png';
+import guest1Image from '../public/images/guest1.png';
+import guest2Image from '../public/images/guest2.png';
+import guest3Image from '../public/images/guest3.png';
+import guest4Image from '../public/images/guest4.png';
+import gallery1Image from '../public/images/gallery1.png';
+import gallery2Image from '../public/images/gallery2.png';
+import gallery3Image from '../public/images/gallery3.png';
+import gallery4Image from '../public/images/gallery4.png';
+import gallery5Image from '../public/images/gallery5.png';
+import gallery6Image from '../public/images/gallery6.png';
+
 const data = {
   lectures: [
     {
@@ -107,7 +121,7 @@ const data = {
         </dl>
       ),
       isSheduled: false,
-      image: '/images/Shake.png',
+      image: shakeImage,
     },
     {
       name: 'О чем умолчал Дэн Браун, или Нескучно о раннем христианстве',
@@ -192,7 +206,7 @@ const data = {
         </dl>
       ),
       isSheduled: false,
-      image: '/images/Christ.png',
+      image: christImage,
     },
     {
       name: 'Булгаков. Бег',
@@ -236,13 +250,13 @@ const data = {
         </dl>
       ),
       isSheduled: false,
-      image: '/images/bulgakov.png',
+      image: bulgakovImage,
     },
   ],
   feedbacks: [
     {
       name: 'Комиссарова Елена',
-      image: '/images/guest1.png',
+      image: guest1Image,
       lecture: 'О чем умолчал Дэн Браун',
       date: '19 апреля 2023',
       short: 'Потрясает глубокое знание предмета и содержание.',
@@ -251,7 +265,7 @@ const data = {
     },
     {
       name: 'Наталья и Сергей',
-      image: '/images/guest2.png',
+      image: guest2Image,
       lecture: 'О чем умолчал Дэн Браун',
       date: '19 апреля 2023',
       short: 'Полный восторг! Однозначно советую!',
@@ -260,7 +274,7 @@ const data = {
     },
     {
       name: 'Ларичева Ирина',
-      image: '/images/guest3.png',
+      image: guest3Image,
       lecture: 'О чем умолчал Дэн Браун',
       date: '19 апреля 2023',
       short: 'Оценка Десять из Десяти!!!',
@@ -269,7 +283,7 @@ const data = {
     },
     {
       name: 'Андрей и Инна Чернышевы',
-      image: '/images/guest4.png',
+      image: guest4Image,
       lecture: 'О чем умолчал Дэн Браун',
       date: '19 апреля 2023',
       short: 'Интересная тема!',
@@ -279,27 +293,27 @@ const data = {
   ],
   images: [
     {
-      image: '/images/gallery1.png',
+      image: gallery1Image,
       alt: 'gallery1',
     },
     {
-      image: '/images/gallery2.png',
+      image: gallery2Image,
       alt: 'gallery2',
     },
     {
-      image: '/images/gallery3.png',
+      image: gallery3Image,
       alt: 'gallery3',
     },
     {
-      image: '/images/gallery4.png',
+      image: gallery4Image,
       alt: 'gallery4',
     },
     {
-      image: '/images/gallery5.png',
+      image: gallery5Image,
       alt: 'gallery5',
     },
     {
-      image: '/images/gallery6.png',
+      image: gallery6Image,
       alt: 'gallery6',
     },
   ],

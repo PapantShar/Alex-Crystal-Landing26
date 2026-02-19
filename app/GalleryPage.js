@@ -1,10 +1,10 @@
-//import Image from 'next/image';
-//import Gallery1 from '../public/images/gallery1.png';
-//import Gallery2 from '../public/images/gallery2.png';
-//import Gallery3 from '../public/images/gallery3.png';
-//import Gallery4 from '../public/images/gallery4.png';
-//import Gallery5 from '../public/images/gallery5.png';
-//import Gallery6 from '../public/images/gallery6.png';
+import Image from 'next/image';
+import gallery1 from '../public/images/gallery1.png';
+import gallery2 from '../public/images/gallery2.png';
+import gallery3 from '../public/images/gallery3.png';
+import gallery4 from '../public/images/gallery4.png';
+import gallery5 from '../public/images/gallery5.png';
+import gallery6 from '../public/images/gallery6.png';
 
 export default function GalleryPage({ galleryRef }) {
   return (
@@ -14,19 +14,19 @@ export default function GalleryPage({ galleryRef }) {
         <h1 className=" text-orange-550 ">Атмосфера на мероприятиях</h1>
 
         <div className="mx-auto mt-5 grid max-w-screen-lg gap-5 md:grid-cols-2 ">
-          <img
-            src="/images/gallery1.png"
+          <Image
+            src={gallery1}
             alt="gallery1"
-            className="w-full md:row-span-2"
+            className="h-auto w-full md:row-span-2"
           />
-          <img src="/images/gallery2.png" alt="gallery2" className=" w-full" />
-          <img src="/images/gallery3.png" alt="gallery3" className=" w-full" />
-          <img src="/images/gallery4.png" alt="gallery4" className=" w-full" />
-          <img src="/images/gallery5.png" alt="gallery5" className=" w-full" />
-          <img
-            src="/images/gallery6.png"
+          <Image src={gallery2} alt="gallery2" className="h-auto w-full" />
+          <Image src={gallery3} alt="gallery3" className="h-auto w-full" />
+          <Image src={gallery4} alt="gallery4" className="h-auto w-full" />
+          <Image src={gallery5} alt="gallery5" className="h-auto w-full" />
+          <Image
+            src={gallery6}
             alt="gallery6"
-            className="w-full md:col-span-2"
+            className="h-auto w-full md:col-span-2"
           />
         </div>
       </div>

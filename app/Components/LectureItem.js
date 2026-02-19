@@ -1,7 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
 'use client';
 //import { parseISO, format } from 'date-fns';
 import React, { useState } from 'react';
+import Image from 'next/image';
 import ButtonUniversal from './ButtonUniversal';
 import MainModal from './MainModal';
 import ModalForm from './ModalForm';
@@ -12,7 +12,7 @@ export default function LectureItem({ lecture }) {
   const [showDetails, setShowDetails] = useState(false);
   return (
     <div className="card relative">
-      <img src={lecture.image} alt={lecture.name} className="w-full " />
+      <Image src={lecture.image} alt={lecture.name} className="h-auto w-full" />
       <div className="p-5">
         <div className="flex items-center justify-between text-xl font-bold ">
           <div>{lecture.date}</div>

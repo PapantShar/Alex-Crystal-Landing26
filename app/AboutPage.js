@@ -1,11 +1,12 @@
 'use client';
 
-//import Image from 'next/image';
 import React, { useState } from 'react';
+import Image from 'next/image';
 import ButtonUniversal from './Components/ButtonUniversal';
 import ModalForm from './Components/ModalForm';
 import MainModal from './Components/MainModal';
-//import AlexwBook from '.././public/images/Alex w book.png';
+import alexWithBookImage from '../public/images/Alex w book.png';
+import bookOpenIcon from '../public/images/book-open.svg';
 
 export default function AboutPage({ aboutRef }) {
   const [showModal, setShowModal] = useState(false);
@@ -21,9 +22,9 @@ export default function AboutPage({ aboutRef }) {
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2 ">
             <div className=" border-orange-550 md:order-1  lg:row-span-2 lg:border-2 lg:pb-4">
               <figure className="relative ">
-                <img
+                <Image
                   className="relative top-4 z-10 lg:left-10 "
-                  src="/images/Alex w book.png"
+                  src={alexWithBookImage}
                   alt="Alex Portret light background"
                 />
               </figure>
@@ -31,9 +32,9 @@ export default function AboutPage({ aboutRef }) {
             <div className=" flex flex-col justify-between md:order-2 md:pt-6">
               <div>
                 <h3 className="text-gray-700 ">
-                  <img
+                  <Image
                     className="mr-5 inline"
-                    src="/images/book-open.svg"
+                    src={bookOpenIcon}
                     alt="Open Book Icon"
                     width={24}
                     height={24}
@@ -47,13 +48,13 @@ export default function AboutPage({ aboutRef }) {
               </div>
               <div>
                 <h3 className="text-gray-700 ">
-                  <img
+                  <Image
                     className="mr-5 inline"
-                    src="/images/book-open.svg"
+                    src={bookOpenIcon}
                     alt="Open Book Icon"
                     width={24}
                     height={24}
-                  ></img>
+                  />
                   Автор книги «Галльское евангелие»
                 </h3>
                 <p className="text-brown-950">
@@ -66,13 +67,13 @@ export default function AboutPage({ aboutRef }) {
               </div>
               <div>
                 <h3 className="text-gray-700 ">
-                  <img
+                  <Image
                     className="mr-5 inline"
-                    src="/images/book-open.svg"
+                    src={bookOpenIcon}
                     alt="Open Book Icon"
                     width={24}
                     height={24}
-                  ></img>
+                  />
                   Лектор
                 </h3>
                 <p className="text-brown-950 ">
