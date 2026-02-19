@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 40px #d0b8a6 inset !important;
+  -webkit-text-fill-color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+.ancor {
+  margin-top: -60px; /* Size of fixed header */
+  padding-bottom: 60px;
+  display: block;
+}
+
+h1 {
+  @apply mb-10  text-2xl font-bold md:text-4xl lg:text-5xl;
+}
+
+h2 {
+  @apply mb-4 mt-8 text-lg font-semibold md:text-xl lg:text-2xl;
+}
+
+h3 {
+  @apply mb-2 mt-2 text-base font-semibold md:text-lg lg:text-xl;
+}
+
+p {
+  @apply text-sm md:text-base lg:text-lg;
+}
+
+.header .footer {
+  @apply text-xs md:text-base;
+}
+.card {
+  @apply block bg-[#2b2019];
+}
+.primary-button {
+  @apply border-2 border-orange-550 bg-transparent font-semibold  uppercase leading-tight
+    text-inherit
+    transition duration-150
+    ease-in-out hover:bg-orange-550   active:bg-orange-550 active:opacity-60;
+}
+
+.dropdown-link {
+  @apply flex p-2.5;
+}
