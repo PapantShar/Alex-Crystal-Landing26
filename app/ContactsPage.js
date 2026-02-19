@@ -16,7 +16,8 @@ export default function ContactsPage({ contactsRef }) {
   );
   const [persData, setPersData] = useState('true');
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (event) => {
+    event?.preventDefault();
     //e.preventDefault();
     const data = {
       name,
@@ -79,7 +80,7 @@ export default function ContactsPage({ contactsRef }) {
               полезная информация, никакого спама.
             </p>
             <p>Подписывайтесь на рассылку!</p>
-            <form className=" ">
+            <form className=" " onSubmit={handleSubmit}>
               <input
                 type="email"
                 className="form-control mb-4 block
@@ -102,12 +103,7 @@ export default function ContactsPage({ contactsRef }) {
                 onChange={(e) => setEmail(e.target.value)}
               />
               <span className="text-white-700 hover:text-white active:hover:text-white">
-                <ButtonUniversal
-                  onClick={() => {
-                    handleSubmit();
-                  }}
-                  title={'Подписаться'}
-                />
+                <ButtonUniversal type="submit" title={'Подписаться'} />
               </span>
             </form>
           </div>

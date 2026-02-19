@@ -11,7 +11,8 @@ export default function ModalForm({ onClose, type }) {
   const [message, setMessage] = useState('');
   const [persData, setPersData] = useState('true');
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (event) => {
+    event?.preventDefault();
     //e.preventDefault();
     const data = {
       name,
@@ -62,7 +63,7 @@ export default function ModalForm({ onClose, type }) {
       <h2 className="mb-6 text-center text-3xl text-gray-700">
         Заполните информацию о себе и напишите текст сообщения
       </h2>
-      <form className=" ">
+      <form className=" " onSubmit={handleSubmit}>
         <input
           type="text"
           className="form-control m-0 block
@@ -213,7 +214,7 @@ export default function ModalForm({ onClose, type }) {
         </div>
 
         <span className="text-gray-700 hover:text-white active:hover:text-white">
-          <ButtonUniversal onClick={handleSubmit} title="Отправить" />
+          <ButtonUniversal type="submit" title="Отправить" />
         </span>
       </form>
     </>
